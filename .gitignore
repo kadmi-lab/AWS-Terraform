@@ -1,1 +1,7 @@
+# Ignore directories containing the Terraform configuration
+.terraform/
 
+tf-cloud-state-key
+tf-cloud-state-key.pub
+
+.terraform.lock.hcl
