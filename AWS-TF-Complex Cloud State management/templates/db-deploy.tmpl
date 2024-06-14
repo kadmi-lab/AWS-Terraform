@@ -1,0 +1,5 @@
+sudo apt update
+sudo apt install -y git
+sudo apt install -y mysql-client
+git clone https://github.com/kadmi-lab/Test-Application.git
+mysql -h ${rds-endpoint} -u ${dbuser} --password=${dbpass} accounts < /home/ubuntu/Test-Application/src/main/resources/db_backup.sql
